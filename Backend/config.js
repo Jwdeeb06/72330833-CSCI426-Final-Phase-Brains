@@ -1,13 +1,13 @@
-const mysql = require("mysql");
+const mysql = require("mysql2");
 
 console.log("📌 MySQL config file loaded");
 
 const db = mysql.createConnection({
-  host: "localhost",
+  host: "hopper.proxy.rlwy.net",
   user: "root",
-  password: "",
-  database: "brains",
-  port: 3306,
+  password: "yxweIunCLWRukNUTJximnPnxtrWTaWji",
+  database: "railway",
+  port: 57559,
 });
 
 db.connect((err) => {
