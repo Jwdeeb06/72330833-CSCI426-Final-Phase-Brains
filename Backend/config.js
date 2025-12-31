@@ -1,5 +1,7 @@
 const mysql = require("mysql");
 
+console.log("📌 MySQL config file loaded");
+
 const db = mysql.createConnection({
   host: "localhost",
   user: "root",
@@ -10,7 +12,8 @@ const db = mysql.createConnection({
 
 db.connect((err) => {
   if (err) {
-    console.error("❌ Database connection failed:", err.message);
+    console.error("❌ Database connection failed:");
+    console.error(err); // 👈 FULL ERROR
   } else {
     console.log("✅ Connected to MySQL database");
   }

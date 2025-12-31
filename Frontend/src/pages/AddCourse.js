@@ -92,13 +92,16 @@ const AddCourse = () => {
       alert(res.data.message);
 
       // add newly created course to the table
+      const categoryName =
+        categories.find((c) => c.id === Number(categoryId))?.name || "";
+
       setCourses([
         ...courses,
         {
           id: Date.now(),
           name,
           price,
-          categoryName: categoryId,
+          categoryName,
           description,
           image: preview,
         },
@@ -107,7 +110,7 @@ const AddCourse = () => {
       // reset form
       setName("");
       setPrice("");
-      setCategoryId(categories[0].name);
+      setCategoryId(categories[0].id);
       setDescription("");
       setImage(null);
       setPreview(null);
@@ -272,7 +275,7 @@ const AddCourse = () => {
               </td>
               <td>{course.name}</td>
               <td>${course.price}</td>
-              <td>{course.category}</td>
+              <td>{course.categoryName}</td>
               <td>{course.description}</td>
               <td>
                 <button
