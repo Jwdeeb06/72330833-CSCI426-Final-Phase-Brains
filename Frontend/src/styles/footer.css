@@ -1,0 +1,183 @@
+.footer {
+  background: #061c2e; /* dark blue */
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 60px 8% 30px;
+}
+
+/* === Content Wrapper === */
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  justify-items: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+/* === Columns === */
+.footer-column.about {
+  display: flex;
+  align-items: center;       /* centers vertically */
+  justify-content: center;   /* centers horizontally in column area */
+  gap: 20px;
+  text-align: left;
+}
+
+.footer-column.about img {
+  width: 85px;
+  height: auto;
+}
+
+.footer-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 400px;
+}
+
+.footer-text h3 {
+  color: #ffcc00;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+}
+
+.footer-text p {
+  color: #e0e0e0;
+  font-size: 15px;
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}
+
+
+/* === Quick Links === */
+/* === Make Quick Links horizontal === */
+.footer-column.links {
+  text-align: center;
+}
+
+.footer-column.links h4 {
+  color: #ffcc00;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.horizontal-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.horizontal-links li {
+  position: relative;
+}
+
+.horizontal-links li:not(:last-child)::after {
+  content: "|";
+  color: #ffcc00;
+  margin-left: 18px;
+}
+
+.horizontal-links a {
+  text-decoration: none;
+  color: #e0e0e0;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.horizontal-links a:hover {
+  color: #ffcc00;
+}
+
+/* === Compact footer === */
+.footer {
+  padding: 30px 8% 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  gap: 40px;
+}
+
+.footer-bottom {
+  margin-top: 25px;
+  font-size: 13px;
+}
+
+
+/* === Contact Section === */
+.footer-column.contact p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 10px 0;
+  font-size: 15px;
+  color: #ddd;
+}
+
+.footer-column.contact .icon {
+  color: #ffcc00;
+  font-size: 20px;
+}
+
+.footer-column.contact a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-column.contact a:hover {
+  color: #ffcc00;
+}
+
+/* === Social Icons === */
+.socials {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials a {
+  color: #ffcc00;
+  font-size: 26px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* === Footer Bottom === */
+.footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+
+  }
+  .footer-column.links{
+    display: none;
+  }
+  
+}

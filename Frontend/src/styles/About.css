@@ -1,0 +1,181 @@
+.about-page {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: linear-gradient(to bottom, #06203d, #010a14);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ===== Hero Section ===== */
+.about-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.about-hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.about-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.about-hero-overlay h1 {
+  font-size: 2.8rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.about-hero-overlay p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* ===== Intro Section ===== */
+.about-content {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.about-intro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  gap: 30px;
+}
+
+.about-logo {
+  width: 160px;
+  height: auto;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-text h2 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: #dcdcdc;
+  line-height: 1.7;
+}
+
+/* ===== Features ===== */
+.about-features {
+  margin: 50px 0;
+}
+
+.features-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.feature-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 204, 0, 0.3);
+  border-radius: 15px;
+  padding: 25px;
+  width: 300px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  background: rgba(255, 204, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.feature-card h3 {
+  color: #ffcc00;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* ===== Vision Section ===== */
+.about-vision {
+  margin: 60px auto;
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-vision h2 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.about-vision p {
+  color: #ddd;
+  line-height: 1.7;
+}
+
+/* ===== Call to Action ===== */
+.about-cta {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about-cta h2 {
+  color: #ffcc00;
+  margin-bottom: 15px;
+}
+
+.about-cta p {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.btn-join {
+  background: #ffcc00;
+  color: #001a33;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-join:hover {
+  background: #ffd84a;
+  color: #000;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .about-hero-overlay h1 {
+    font-size: 2rem;
+  }
+  .about-hero-overlay p {
+    font-size: 1rem;
+  }
+  .feature-card {
+    width: 90%;
+  }
+}

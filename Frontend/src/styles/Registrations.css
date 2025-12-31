@@ -1,0 +1,116 @@
+.add-user-page, .registrations-page {
+  padding: 40px;
+  background: linear-gradient(180deg, #061a2f, #0a3050);
+  min-height: 100vh;
+  color: white;
+  margin-left: 240px;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 25px;
+}
+
+.add-user-form {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
+.add-user-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+.add-user-form button {
+  background: #ffcc00;
+  color: #001a33;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.user-table, .registrations-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.user-table th, .registrations-table th,
+.user-table td, .registrations-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.status-btn, .approve-btn, .deny-btn {
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.status-btn.activate { background: #00b74a; color: #fff; }
+.status-btn.deactivate { background: #ff4444; color: #fff; }
+.approve-btn { background: #00b74a; color: white; margin-right: 8px; }
+.deny-btn { background: #ff4444; color: white; }
+
+.status.approved { color: #00ff88; }
+.status.denied { color: #ff4444; }
+.status.pending { color: #ffcc00; }
+/* === Action Buttons === */
+.approve-btn,
+.deny-btn {
+  display: inline-block;
+  min-width: 110px;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin: 5px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Approve Button */
+.approve-btn {
+  background: linear-gradient(145deg, #009e4f, #00b368);
+  border: 1px solid #00b368;
+}
+
+.approve-btn:hover {
+  background: linear-gradient(145deg, #00b368, #00cc77);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 179, 104, 0.4);
+}
+
+/* Deny Button */
+.deny-btn {
+  background: linear-gradient(145deg, #b92b2b, #ff4444);
+  border: 1px solid #ff4444;
+}
+
+.deny-btn:hover {
+  background: linear-gradient(145deg, #ff4444, #ff5c5c);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 68, 68, 0.4);
+}
+
+/* Keep them side by side */
+td button {
+  margin-right: 10px;
+}

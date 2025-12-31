@@ -1,0 +1,139 @@
+.contact {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #041c32, #010a14);
+}
+
+/* ===== LEFT SIDE (IMAGE) ===== */
+.leftSide {
+  flex: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  filter: brightness(75%);
+  border-radius: 0 20px 20px 0;
+}
+
+/* ===== RIGHT SIDE (FORM AREA) ===== */
+.rightSide {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  padding: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== HEADER ===== */
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.contact-header p {
+  color: #ddd;
+  font-size: 1rem;
+}
+
+/* ===== FORM ===== */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form label {
+  font-weight: 500;
+  color: #ffcc00;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 204, 0, 0.3);
+  border-radius: 10px;
+  padding: 12px;
+  font-size: 15px;
+  color: #fff;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #bbb;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 8px rgba(255, 204, 0, 0.5);
+}
+
+/* ===== BUTTON ===== */
+button {
+  background: #ffcc00;
+  color: #001a33;
+  border: none;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #ffd84a;
+  transform: scale(1.03);
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info {
+  margin-top: 30px;
+  text-align: center;
+  color: #bbb;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .leftSide {
+    height: 250px;
+    border-radius: 0;
+  }
+
+  .rightSide {
+    padding: 40px 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,293 @@
+.add-course-page {
+  padding: 40px;
+  background: linear-gradient(180deg, #061a2f, #0a3050);
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  margin-left: 240px;
+}
+
+.add-course-page h1 {
+  text-align: center;
+  color: #ffcc00;
+  margin-bottom: 30px;
+  font-size: 28px;
+  letter-spacing: 0.5px;
+}
+
+/* ==== Form Styling ==== */
+.add-course-form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 0 auto 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+/* consistent width for all fields */
+.add-course-form input,
+.add-course-form select,
+.add-course-form textarea,
+.add-course-form input[type="file"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+}
+
+.add-course-form input::placeholder,
+.add-course-form textarea::placeholder {
+  color: #bbb;
+}
+
+.add-course-form input:focus,
+.add-course-form select:focus,
+.add-course-form textarea:focus {
+  outline: none;
+  border-color: #ffcc00;
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.4);
+}
+
+.add-course-form textarea {
+  resize: none;
+}
+
+/* ONLY the main submit button */
+.add-course-form > button {
+  width: 100%;
+  background: #ffcc00;
+  color: #001a33;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.add-course-form > button:hover {
+  background: #ffd84a;
+  transform: scale(1.03);
+}
+
+
+.add-course-form button:hover {
+  background: #ffd84a;
+  transform: scale(1.03);
+}
+
+/* ==== Image Preview ==== */
+.preview img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ==== Table ==== */
+.course-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.course-table th,
+.course-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: left;
+}
+
+.course-table th {
+  color: #ffcc00;
+  background-color: rgba(255, 204, 0, 0.08);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.course-table tr:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transition: 0.2s ease-in-out;
+}
+
+.table-img {
+  width: 70px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.remove-btn {
+  background: #b30000;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.remove-btn:hover {
+  background: #ff0000;
+  transform: scale(1.05);
+}
+/* Style the dropdown itself */
+.add-course-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Style the options inside dropdown */
+.add-course-form select option {
+  background-color: #0a3050;
+  color: #fff;
+}
+
+/* Optional hover/focus styles for better UI */
+.add-course-form select:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 6px rgba(255, 204, 0, 0.4);
+  outline: none;
+}
+/* Category Manager Container */
+.category-manager {
+  margin-top: 12px;
+  padding: 16px;
+  background: #0f2a3f;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Title */
+.category-manager h4 {
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* Add Category Row */
+.add-cat {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.add-cat input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: none;
+  background: #143b57;
+  color: #fff;
+  outline: none;
+}
+
+.add-cat input::placeholder {
+  color: #9fb3c8;
+}
+
+.add-cat button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  background: #ffd23f;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.add-cat button:hover {
+  background: #ffcc1a;
+}
+
+/* Category List */
+.cat-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Category Item */
+.cat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  background: #143b57;
+  border-radius: 10px;
+  color: #fff;
+  transition: background 0.2s ease;
+}
+
+.cat-item:hover {
+  background: #1b4f72;
+}
+
+/* Category Name */
+.cat-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.cat-delete {
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ff1100;
+  border: none;
+  border-radius: 6px;
+
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.cat-delete:hover {
+  background: #ffb700;
+}
+
+.cat-item {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.cat-name {
+  flex: 1;
+}

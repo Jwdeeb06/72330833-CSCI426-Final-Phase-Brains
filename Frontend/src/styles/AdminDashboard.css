@@ -1,0 +1,71 @@
+.admin-dashboard-page {
+  margin-left: 240px; /* leave space for sidebar */
+  min-height: 100vh;
+  background: linear-gradient(180deg, #061a2f, #0a3050);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  padding: 50px 40px;
+  box-sizing: border-box;
+}
+
+/* === Header === */
+.admin-dashboard-page h1 {
+  color: #ffcc00;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.admin-dashboard-page p {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+/* === Dashboard Cards === */
+.admin-dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.admin-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.3s ease;
+}
+
+.admin-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 204, 0, 0.25);
+}
+
+.admin-card h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.admin-card p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .admin-dashboard-page {
+    margin-left: 0;
+    padding: 30px 20px;
+  }
+
+  .admin-dashboard-cards {
+    grid-template-columns: 1fr;
+  }
+}
