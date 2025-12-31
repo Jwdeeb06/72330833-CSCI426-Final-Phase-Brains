@@ -25,19 +25,29 @@ const NavBar = () => {
 
         <ul className="admin-menu">
           <li>
-            <Link to="/admindashboard">🏠 Dashboard</Link>
+            <Link className="admin-link" to="/admindashboard">
+               Dashboard
+            </Link>
           </li>
           <li>
-            <Link to="/addcourse">➕ Add Course</Link>
+            <Link className="admin-link" to="/addcourse">
+               Add Course
+            </Link>
           </li>
           <li>
-            <Link to="/adduser">👤 Add User</Link>
+            <Link className="admin-link" to="/adduser">
+               Add User
+            </Link>
           </li>
           <li>
-            <Link to="/registrations">📋 Registrations</Link>
+            <Link className="admin-link" to="/registrations">
+               Registrations
+            </Link>
           </li>
           <li>
-            <Link to="/messages">✉️ Messages</Link>
+            <Link className="admin-link" to="/messages">
+               Messages
+            </Link>
           </li>
         </ul>
 
