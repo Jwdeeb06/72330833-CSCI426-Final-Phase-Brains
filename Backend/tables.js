@@ -1,5 +1,7 @@
 const db = require("./config");
-
+//first create db named brains
+//then in terminal run node table.js
+//the db is created 
 /* USERS TABLE */
 const usersTable = `
 CREATE TABLE IF NOT EXISTS users (
