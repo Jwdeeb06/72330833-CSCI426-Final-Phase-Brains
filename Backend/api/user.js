@@ -15,6 +15,7 @@ router.get("/", (req, res) => {
   });
 });
 
+/* GET ALL USERS ( deleted / inactive) */
 router.get("/in", (req, res) => {
   const sql = `
     SELECT id, username, password, is_active, created_at
