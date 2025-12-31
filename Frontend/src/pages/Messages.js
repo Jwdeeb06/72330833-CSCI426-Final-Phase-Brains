@@ -4,7 +4,7 @@ import "../styles/Messages.css";
 
 const Messages = () => {
   const [messages, setMessages] = useState([]);
-  const API_BASE = "http://localhost:5000/api";
+  const API_BASE = "https://seven2330833-csci426-final-phase-brains.onrender.com/api";
 
   // fetch messages from backend
   useEffect(() => {

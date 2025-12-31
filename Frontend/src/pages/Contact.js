@@ -18,7 +18,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/messages/add", {
+      await axios.post("https://seven2330833-csci426-final-phase-brains.onrender.com/api/messages/add", {
         name: state.fname,
         email: state.email,
         content: state.message,

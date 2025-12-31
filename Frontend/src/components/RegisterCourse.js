@@ -17,7 +17,7 @@ const RegisterCourse = ({ course, onClose }) => {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:5000/api/registrations/add", {
+      await axios.post("https://seven2330833-csci426-final-phase-brains.onrender.com/api/registrations/add", {
         name: form.name,
         email: form.email,
         phone: form.phone,

@@ -25,20 +25,20 @@ const Menu = () => {
   // 2️⃣ fetch categories
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/categories")
+      .get("https://seven2330833-csci426-final-phase-brains.onrender.com/api/categories")
       .then((res) => setCategories(res.data))
       .catch((err) => console.error(err));
   }, []);
 
   // 3️⃣ fetch courses (all or by category)
   useEffect(() => {
-    let url = "http://localhost:5000/api/courses";
+    let url = "https://seven2330833-csci426-final-phase-brains.onrender.com/api/courses";
 
     // find category id
     if (selectedCategory !== "ALL") {
       const category = categories.find((c) => c.name === selectedCategory);
       if (category) {
-        url = `http://localhost:5000/api/courses/by-category/${category.id}`;
+        url = `https://seven2330833-csci426-final-phase-brains.onrender.com/api/courses/by-category/${category.id}`;
       }
     }
 
@@ -78,7 +78,7 @@ const Menu = () => {
         {courses.map((course) => (
           <div key={course.id} onClick={() => setSelectedCourse(course)}>
             <CourseItem
-              image={`http://localhost:5000/assets/${course.image}`}
+              image={`https://seven2330833-csci426-final-phase-brains.onrender.com/assets/${course.image}`}
               name={course.name}
               price={course.price}
             />
