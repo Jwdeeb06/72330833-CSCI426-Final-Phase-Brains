@@ -17,6 +17,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+  //the API-base for localhosted backend
+  // const API_BASE = "http://localhost:5000/api";
     try {
       await axios.post("https://seven2330833-csci426-final-phase-brains.onrender.com/api/messages/add", {
         name: state.fname,

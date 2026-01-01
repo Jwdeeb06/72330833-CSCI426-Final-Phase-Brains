@@ -13,7 +13,12 @@ const AddCourse = () => {
   const [description, setDescription] = useState("");
   const [image, setImage] = useState(null);
   const [preview, setPreview] = useState(null);
+  //the API-base for Render hosted backend
   const API_BASE = "https://seven2330833-csci426-final-phase-brains.onrender.com/api";
+
+  //the API-base for localhosted backend
+  // const API_BASE = "http://localhost:5000/api";
+  
   const [showCategoryManager, setShowCategoryManager] = useState(false);
   const [newCategory, setNewCategory] = useState("");
   // fetch categories from backend

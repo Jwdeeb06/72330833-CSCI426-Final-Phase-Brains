@@ -5,6 +5,9 @@ import logo from "../assets/logo.png";
 import "../styles/Home.css";
 import axios from "axios";
 
+  //the API-base for localhosted backend
+  // const API_BASE = "http://localhost:5000/api";
+  
 const Home = () => {
   const navigate = useNavigate(); // for navigating between pages
 

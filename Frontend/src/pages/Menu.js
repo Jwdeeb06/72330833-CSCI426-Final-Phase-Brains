@@ -4,7 +4,8 @@ import CourseItem from "../components/CourseItem";
 import RegisterCourse from "../components/RegisterCourse";
 import "../styles/Menu.css";
 import axios from "axios";
-
+  //the API-base for localhosted backend
+  // const API_BASE = "http://localhost:5000/api";
 const Menu = () => {
   const location = useLocation();
 

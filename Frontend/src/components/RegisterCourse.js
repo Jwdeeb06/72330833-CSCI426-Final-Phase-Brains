@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../styles/RegisterCourse.css";
 import axios from "axios";
+
+  //the API-base for localhosted backend
+  // const API_BASE = "http://localhost:5000/api";
 const RegisterCourse = ({ course, onClose }) => {
   const [form, setForm] = useState({
     name: "",

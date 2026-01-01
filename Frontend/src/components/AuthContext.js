@@ -5,7 +5,13 @@ const AuthContext = createContext(null);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  //the API-base for Render hosted backend
   const API_BASE = "https://seven2330833-csci426-final-phase-brains.onrender.com/api";
+  
+  //the API-base for localhosted backend
+  // const API_BASE = "http://localhost:5000/api";
+
+  
   // login function using backend
   const login = async (username, password) => {
     try {

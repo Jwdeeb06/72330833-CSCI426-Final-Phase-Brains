@@ -9,7 +9,11 @@ function AdminDashboard() {
   const [usersCount, setUsersCount] = useState(0);
   const [newMessagesCount, setNewMessagesCount] = useState(0);
 
+  //the API-base for Render hosted backend
   const API_BASE = "https://seven2330833-csci426-final-phase-brains.onrender.com/api";
+
+  //the API-base for localhosted backend
+  // const API_BASE = "http://localhost:5000/api";
 
   useEffect(() => {
     // fetch courses count
