@@ -2,6 +2,7 @@ const mysql = require("mysql2");
 
 console.log("📌 MySQL config file loaded");
 
+//the connection for the online database on railway
 const db = mysql.createConnection({
   host: "hopper.proxy.rlwy.net",
   user: "root",
@@ -9,6 +10,16 @@ const db = mysql.createConnection({
   database: "railway",
   port: 57559,
 });
+
+
+// the connection for the local host
+// const db = mysql.createConnection({
+//   host: "localhost",
+//   user: "root",
+//   password: "",
+//   database: "brains",
+//   port: 3306
+// });
 
 db.connect((err) => {
   if (err) {
